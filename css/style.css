@@ -136,7 +136,7 @@ nav li:hover {
 
 .hero-2 a {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   color: #65e2d9;
   padding-bottom: 5px;
   border-bottom: 1px solid #65e2d9;
