@@ -1,0 +1,110 @@
+@media (min-width: 600px ){
+
+    // Serivce section
+    .our-services{
+
+        grid-template-columns: 1fr 1fr;
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    .hero-2{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+
+        p{
+            max-width: 514px;
+        }
+
+        a{
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+@media(min-width: 800px){
+
+    .reviews ul{
+        grid-template-columns: repeat(3,1fr);
+        justify-content: center;
+        max-width: 1100px;
+    }
+
+     //footer
+    footer{  
+
+        .early-access{
+            top: -30%;
+        }
+
+        .footer-grid{
+            grid-template-columns: repeat(4,1fr);
+            justify-content: center;
+        }
+    
+        .footer-box-2, .footer-box-3, .footer-box-4{
+            justify-self: center;
+        }
+
+        .footer-box-5{
+            justify-self: center;
+            grid-column: 1/5;
+            grid-row: 2;
+        }
+    }
+}
+
+@media(min-width:900px) {
+
+    .hero-2{
+        flex-direction: row;
+        text-align: left;
+        justify-content: center;
+
+        img{
+            flex-basis: 40%;
+        }
+
+        .hero-text{
+            flex-basis: 40%;
+        }
+        
+        a{
+            margin: 15px;
+        }
+
+        p{
+            max-width: 514px;
+            line-height: 1.8;
+        }
+        
+    }
+}
+
+@media(min-width: 984px){
+
+    footer{
+    padding-top: 140px; // space for early access
+
+    .footer-grid{
+        grid-template-columns: repeat(5,1fr);
+    }
+
+    .footer-box-5{
+        grid-column: 5;
+        grid-row: 1;
+    }
+    }
+
+}
+
+@media(min-width:1090px){
+
+    .reviews ul{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}

@@ -1,0 +1,70 @@
+//variables
+$white: hsl(0, 0%, 100%);
+//intro and email sign up background
+$darkBlue-1: hsl(217, 28%, 15%);
+// main background
+$darkBlue-2: hsl(218, 28%, 13%);
+//testimonials background
+$darkBlue-3: hsl(219, 30%, 18%);
+// footer background
+$darkBlue-4: hsl(216, 53%, 9%);
+
+//call-to-action color gradient cyan to blue
+$cyan : hsl(176, 68%, 64%);
+$blue : hsl(198, 60%, 50%);
+
+//error
+$Red: hsl(0, 100%, 63%);
+
+// Reset
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// wrapper
+.container{
+    margin: 40px;
+}
+
+.content-wrapper{
+    margin: 15px;
+}
+
+// layout
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: $white;
+    background-color: $darkBlue-2;
+}
+
+nav, h1, h2, h3, h4, button, a {
+    font-family: 'Raleway', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: $white;
+    line-height: 1.6;
+}
+
+// logo
+img.logo{
+    height: 30px;
+}
+
+
+//attribution
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@import 'navbar';
+@import 'content';
+@import 'button';
+@import 'desktop';

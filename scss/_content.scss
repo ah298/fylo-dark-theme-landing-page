@@ -1,0 +1,282 @@
+//intro section
+.hero-1{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url(../images/bg-curvy-desktop.svg) no-repeat;
+    background-color: $darkBlue-1;
+    background-size: contain;
+    background-position: bottom center;
+    padding: 30px 0 100px 0;
+
+    img{
+        max-width: 70vw;
+        width: 720px;
+    }
+
+    h1{
+        max-width: 400px;
+        
+    }
+
+    p{
+        max-width: 420px;
+        line-height: 1.5;
+    }
+
+}
+
+// Serivce section
+.our-services{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0;
+
+    .service{
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        max-width: 380px;
+        padding: 0 15px;
+    }
+}
+
+// stay productive section
+.hero-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    justify-content:flex-start;
+
+    img{
+
+        width: 500px;
+        // max-width: 70vw;
+        // width: 615px;
+    }
+
+    a{  
+        display: flex;
+        align-items: flex-end;
+        color: $cyan;
+        padding-bottom: 5px;
+        border-bottom: 1px solid $cyan;
+        width: 150px;
+    }
+
+
+
+    a svg{
+        padding-left: 5px;
+        box-sizing: content-box;
+
+    }
+
+    a:hover{
+        color: $white;
+        border-color: $white;
+    }
+
+    a:hover svg use{
+        fill: $white;
+    }
+}
+
+//Reviews section
+
+.reviews ul{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+    justify-items: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 200px; // margin-bottom: space for early access 
+    
+    li>*{
+        padding: 8px 10px;
+    }
+
+    li{
+        max-width: 330px;
+        background-color: $darkBlue-3;
+        border-radius: 5px;
+        padding: 20px 15px 15px 10px;
+        box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    }
+
+    img{
+        width: 13%;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    .reviewer{
+        display: flex;
+        align-items: center;
+    }
+
+    h4{
+        padding: 4px 0;
+    }
+    
+    p{
+        font-size: 12px;
+    }
+
+}
+
+//Early access section
+footer{
+    background-color: $darkBlue-4;
+    padding: 50px; 
+    position: relative;
+
+    .early-access{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: $darkBlue-1;
+        border-radius: 5px;
+        padding: 20px;
+        max-width: 800px;
+        position: absolute;
+        top: -20%;
+        left: 50%;
+        transform: translateX(-50%);
+
+        &>*{
+            padding: 10px 5px;
+        }
+
+        form{
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            &>*{
+                margin: 10px 8px;
+            }    
+        }
+
+        form input[type = "email"]{
+            border: none;
+            border-radius: 30px;
+            padding: 10px 20px;
+            width: 240px;
+        }
+
+    }
+}
+
+//footer
+footer{
+    padding-top: 205px; // space for early access
+
+    .footer-logo{
+        margin-bottom: 15px;
+    }
+
+    .footer-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+        justify-content: center;
+    }
+
+    .footer-box-1{
+        position: relative;
+
+        p{
+            padding-left: 40px;
+        }
+
+        p::before{
+            content: "";
+            width: 20px;
+            height: 20px;
+            background-image: url("../images/icon-location.svg");
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 3px;
+            left: 0;
+        }
+    }
+
+    .footer-box-2{
+        .email, .contact{
+            position: relative;
+        }
+
+        p{
+            padding-left: 40px;
+            padding-bottom: 10px;
+        }
+        
+        .contact::before{
+            content: "";
+            width: 20px;
+            height: 20px;
+            background-image: url("../images/icon-phone.svg");
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 3px;
+            left: 0;
+        }
+
+        .email::before{
+            content: "";
+            width: 20px;
+            height: 20px;
+            background-image: url("../images/icon-email.svg");
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 5px;
+            left: 0;
+        }
+    }
+    
+    .footer-box-3{
+        a{
+            display: block;
+        }
+        
+    }
+    
+    .footer-box-4{
+        a{
+            display: block;
+        }
+    }
+
+    .footer-box-3, .footer-box-4{
+
+        a:hover{
+            font-weight: 700;
+        }
+    }
+
+    .footer-box-5{
+        justify-self: center;
+
+        a:not(:last-child){
+            margin-right: 10px;
+        }
+
+        a:hover svg path{
+            fill: $cyan;
+        }
+
+    }
+}
