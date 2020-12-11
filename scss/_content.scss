@@ -17,7 +17,7 @@
 
     img{
         max-height: 65vh;
-        max-width: 100%;
+        max-width: 100%;    
     }
 
     h1{
@@ -36,7 +36,6 @@
 
 //Features section
 .features{
-
     background-color: $darkBlue-2;
 
     .features-content{
@@ -46,7 +45,6 @@
         justify-content: center;    
         justify-items: center;
         margin: auto;
-
     }
     
     .feature{
