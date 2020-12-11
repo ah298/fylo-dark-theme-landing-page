@@ -1,0 +1,83 @@
+/* intro */
+.intro{
+    overflow: hidden;
+}
+.intro-content img{
+    opacity: 0;
+    animation: from-left 2s forwards;
+    animation-delay: 200ms;
+}
+
+.intro-content h1{
+    opacity: 0;
+    animation: from-right 2s forwards;
+    animation-delay: 200ms;
+}
+
+// .intro-content p, .intro-content button{
+//     opacity: 0;
+//     animation: appear 3s forwards;
+//     animation-delay: 2s;
+// }
+
+.intro p.anim, .intro button.anim{
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+
+.intro p.anim.visible, .intro button.anim.visible{
+    opacity: 1;
+}
+
+/* stay productive*/ 
+.stay-productive img.anim{
+    transform: translateY(100px);
+    opacity: 0;
+    transition: transform 1s ease-in, opacity 1s ease-in;
+}
+
+.stay-productive .hero-text.anim{
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: transform 1s ease-in, opacity 1s ease-in;
+}
+
+.stay-productive img.anim.visible,.stay-productive .hero-text.anim.visible{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+/* keyframes*/ 
+@keyframes from-right{
+    0%{
+        transform: translateX(100px);
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes from-left{
+    0%{
+        transform: translateX(-100px);
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+// @keyframes appear {
+//     0%{
+//         opacity: 0;
+//     }
+
+//     100%{
+//         opacity: 1;
+//     }
+// }

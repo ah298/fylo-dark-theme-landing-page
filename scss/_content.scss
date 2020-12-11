@@ -1,64 +1,76 @@
 //intro section
-.hero-1{
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.intro{
     text-align: center;
-    background: url(../images/bg-curvy-desktop.svg) no-repeat;
+    background: url(../images/bg-curvy-mobile.svg) no-repeat;
     background-color: $darkBlue-1;
     background-size: contain;
-    background-position: bottom center;
-    padding: 30px 0 100px 0;
+    background-position: center bottom;
+    padding-bottom: 190px;
+
+
+    .intro-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
     img{
-        max-width: 70vw;
-        width: 720px;
+        max-height: 65vh;
     }
 
     h1{
-        max-width: 400px;
-        
+        max-width: 600px;
+        letter-spacing: 1.5px;
     }
 
     p{
-        max-width: 420px;
+        max-width: 500px;
+        letter-spacing: 1px;
         line-height: 1.5;
     }
 
 }
 
-// Serivce section
-.our-services{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 50px;
-    justify-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-top: 0;
 
-    .service{
+//Features section
+.features{
+
+    background-color: $darkBlue-2;
+
+    .features-content{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 50px;
+        justify-content: center;    
+        justify-items: center;
+        margin: auto;
+
+    }
+    
+    .feature{
         display: flex; 
         flex-direction: column;
         align-items: center;
+        text-align: center;
         max-width: 380px;
-        padding: 0 15px;
     }
 }
 
 // stay productive section
-.hero-2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
-    justify-content:flex-start;
+.stay-productive{
+    
+    .stay-productive-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        justify-content:flex-start;
+    }
 
     img{
-
-        width: 500px;
+        width: 100%;
+        max-width: 500px;
         // max-width: 70vw;
         // width: 615px;
     }
@@ -72,12 +84,13 @@
         width: 150px;
     }
 
-
-
     a svg{
         padding-left: 5px;
         box-sizing: content-box;
+    }
 
+    a , a svg use{
+        transition: all 250ms ease-in-out;
     }
 
     a:hover{
@@ -91,7 +104,6 @@
 }
 
 //Reviews section
-
 .reviews ul{
     display: grid;
     grid-template-columns: 1fr;
@@ -113,6 +125,21 @@
         box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
     }
 
+    li:first-child{
+        position: relative;
+    }
+
+    li:first-child::before{
+        content: "";
+        width: 100px;
+        height: 100px;
+        background: url(../images/bg-quotes.png) no-repeat;
+        position: absolute;
+        top: -33px;
+        left: -15px;
+        z-index: -1;
+    }
+
     img{
         width: 13%;
         border-radius: 50%;
@@ -131,16 +158,15 @@
     p{
         font-size: 12px;
     }
-
 }
 
 //Early access section
 footer{
     background-color: $darkBlue-4;
-    padding: 50px; 
+    // padding: 50px; 
     position: relative;
 
-    .early-access{
+    .early-access-content{
 
         display: flex;
         flex-direction: column;
@@ -174,7 +200,7 @@ footer{
             border: none;
             border-radius: 30px;
             padding: 10px 20px;
-            width: 240px;
+            width: 250px;
         }
 
     }
@@ -269,6 +295,10 @@ footer{
 
     .footer-box-5{
         justify-self: center;
+
+        a svg path{
+            transition: fill 250ms ease-in-out;
+        }
 
         a:not(:last-child){
             margin-right: 10px;
