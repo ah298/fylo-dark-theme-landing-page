@@ -123,6 +123,7 @@ nav li:hover {
 
 .intro img {
   max-height: 65vh;
+  max-width: 100%;
 }
 
 .intro h1 {
@@ -523,13 +524,13 @@ button:hover {
 
 /* stay productive*/
 .stay-productive img.anim {
-  transform: translateY(100px);
+  transform: translateY(-100px);
   opacity: 0;
   transition: transform 1s ease-in, opacity 1s ease-in;
 }
 
 .stay-productive .hero-text.anim {
-  transform: translateY(-100px);
+  transform: translateY(100px);
   opacity: 0;
   transition: transform 1s ease-in, opacity 1s ease-in;
 }

@@ -32,13 +32,13 @@
 
 /* stay productive*/ 
 .stay-productive img.anim{
-    transform: translateY(100px);
+    transform: translateY(-100px);
     opacity: 0;
     transition: transform 1s ease-in, opacity 1s ease-in;
 }
 
 .stay-productive .hero-text.anim{
-    transform: translateY(-100px);
+    transform: translateY(100px);
     opacity: 0;
     transition: transform 1s ease-in, opacity 1s ease-in;
 }
