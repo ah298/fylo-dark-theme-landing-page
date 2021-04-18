@@ -467,10 +467,10 @@ button:hover {
     justify-content: center;
   }
   .stay-productive .stay-productive-content img {
-    flex-basis: 40%;
+    flex-basis: 1;
   }
   .stay-productive .stay-productive-content .hero-text {
-    flex-basis: 40%;
+    flex-basis: 1;
     padding-left: 20px;
   }
   .stay-productive .stay-productive-content a {
